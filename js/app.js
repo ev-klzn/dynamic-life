@@ -3761,7 +3761,7 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".offer__slider")) new swiper_core_Swiper(".offer__slider", {
+        if (document.querySelector(".team__slider")) new swiper_core_Swiper(".team__slider", {
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
@@ -3771,13 +3771,13 @@
             preloadImages: true,
             lazy: true,
             navigation: {
-                nextEl: ".offer__slide-next"
+                prevEl: ".team__slide-prev",
+                nextEl: ".team__slide-next"
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    enabled: false
+                    slidesPerView: 1.05,
+                    spaceBetween: 12
                 },
                 768: {
                     slidesPerView: 2.15,

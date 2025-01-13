@@ -20,7 +20,7 @@
 	<meta name="description" content="Dynamic Life - your fitness center">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Dynamic Life - your fitness</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250109144503">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250113153827">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -36,9 +36,9 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a data-goto-header data-goto=".about" class="menu__link" href="#">About Us</a>
+									<a data-goto-header data-goto=".introduction" class="menu__link" href="#">About Us</a>
 								</li>
-								<li data-goto-header data-goto=".classes" class="menu__item">
+								<li data-goto-header data-goto=".offer" class="menu__item">
 									<a class="menu__link" href="#">Services</a>
 								</li>
 								<li data-goto-header data-goto=".price" class="menu__item">
@@ -146,463 +146,459 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="page__offer offer">
 				<div class="offer__container">
 					<h2 class="subtitle">classes <br /><span>What We Offer</span></h2>
+					<div class="filter">
+						<button class="button button--blacknb" data-filter="all">
+							all classes
+						</button>
+						<button class="button button--blacknb" data-filter="1">
+							weight training
+						</button>
+						<button class="button button--blacknb" data-filter="2">
+							cardio training
+						</button>
+						<button class="button button--blacknb" data-filter="3">
+							aerobics
+						</button>
+						<button class="button button--blacknb" data-filter="4">
+							Scrossfit
+						</button>
+						<button class="button button--blacknb" data-filter="5">
+							yoga
+						</button>
+						<button class="button button--blacknb" data-filter="6">
+							stretching
+						</button>
+					</div>
 				</div>
 				<div class="offer__cnt">
 					<div class="offer__list">
-						<div class="offer__slider swiper">
-							<div class="offer__wrapper swiper-wrapper">
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/1.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">weight training</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+						<article data-group="1" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">weight training</h3>
 								</div>
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/2.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">cardio training</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Tuesday </span> <span>11.00am - 12.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Thursday </span><span>9.30am - 11.30am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>9.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>10.00am - 11.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday</span> <span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>11-12pm</span>
+									</div>
 								</div>
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/3.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">aerobics</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Wednesday </span> <span>2.00pm - 3.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Thursday </span><span>3.00pm - 4.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>11.00am - 2.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>9.00am - 10.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/4.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">crossfit</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday </span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/5.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">yoga</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>11.00am - 12.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="offer__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/6.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">stretching</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>12.00am - 1.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>10.00am - 12.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
 								</div>
 							</div>
-							<button type="button" class="offer__slide-next _icon-left"></button>
-						</div>
+						</article>
+						<article data-group="1" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/1-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">weight training</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday</span> <span>12-1pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>6-7pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday</span><span>12-2pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday</span><span>1-2pm</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="2" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/2.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">cardio training</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday </span> <span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>3-4pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday </span><span>8-9am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday</span><span>10-11am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="2" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/2-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">cardio training</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday</span> <span>3-4pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>4-5pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>1-3pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>2-4pm</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="3" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/3.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">aerobics</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday</span> <span>10-11am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>10-11am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="3" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/3-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">aerobics</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday </span> <span>12-2pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday </span><span>11-12am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday</span><span>8-9am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday </span><span>9-10am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="4" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/4.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">crossfit</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday </span> <span>4-5:30pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>3-4:30pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>5:30-7pm</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="4" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/4-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">crossfit</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday </span> <span>10-11am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday</span><span>12-1pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday</span><span>9-10am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="5" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/5.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">yoga</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday</span> <span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>10-11am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday </span><span>10-11am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>9-10am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="5" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/5-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">yoga</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday</span> <span>2-3pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>9.00am - 10.00am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>12-1pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday</span><span>10-11am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday</span><span>10-11am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="6" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/6.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">stretching</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Tuesday</span> <span>11-12am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Thursday</span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Saturday </span><span>9-10am</span>
+									</div>
+									<div class="class__schedule">
+										<span>Sunday </span><span>8-9am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<article data-group="6" class="class">
+							<div class="class__img">
+								<img class="class__image ibg" src="img/classes/6-1.webp" alt="Image" />
+							</div>
+							<div class="class__body">
+								<div class="class__header">
+									<h3 class="class__title">stretching</h3>
+								</div>
+								<div class="class__content">
+									<div class="class__schedule">
+										<span>Monday</span> <span>1-2pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Tuesday</span><span>3-4pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Wednesday</span><span>2-3pm</span>
+									</div>
+									<div class="class__schedule">
+										<span>Friday</span><span>11-12am</span>
+									</div>
+								</div>
+								<div class="class__actions">
+									<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+										Join
+									</a>
+								</div>
+							</div>
+						</article>
+						<!--  -->
+						<script>
+							const scrollContainer = document.querySelector(".offer__list");
+							let isDown = false;
+							let startX;
+							let scrollLeft;
+							scrollContainer.addEventListener("mousedown", (e) => {
+								isDown = true;
+								scrollContainer.classList.add("active");
+								startX = e.pageX - scrollContainer.offsetLeft;
+								scrollLeft = scrollContainer.scrollLeft;
+							});
+							scrollContainer.addEventListener("mouseup", () => {
+								isDown = false;
+								scrollContainer.classList.remove("active");
+							});
+							scrollContainer.addEventListener("mouseleave", () => {
+								isDown = false;
+								scrollContainer.classList.remove("active");
+							});
+							scrollContainer.addEventListener("mousemove", (e) => {
+								if (!isDown) return;
+								e.preventDefault();
+								const x = e.pageX - scrollContainer.offsetLeft;
+								const walk = (x - startX) * 2;
+								scrollContainer.scrollLeft = scrollLeft - walk;
+							});
+						</script>
+						<script>
+							const scrollContainer2 = document.querySelector(".filter");
+							let isDown2 = false;
+							let startX2;
+							let scrollLeft2;
+							scrollContainer2.addEventListener("mousedown", (e) => {
+								isDown2 = true;
+								scrollContainer2.classList.add("active");
+								startX = e.pageX - scrollContainer2.offsetLeft;
+								scrollLeft = scrollContainer2.scrollLeft;
+							});
+							scrollContainer2.addEventListener("mouseup", () => {
+								isDown2 = false;
+								scrollContainer2.classList.remove("active");
+							});
+							scrollContainer2.addEventListener("mouseleave", () => {
+								isDown2 = false;
+								scrollContainer2.classList.remove("active");
+							});
+							scrollContainer2.addEventListener("mousemove", (e) => {
+								if (!isDown2) return;
+								e.preventDefault();
+								const x = e.pageX - scrollContainer2.offsetLeft;
+								const walk = (x - startX) * 2;
+								scrollContainer2.scrollLeft = scrollLeft - walk;
+							});
+						</script>
+						<!--  -->
+						<script>
+							const filter = document.querySelectorAll(".filter button");
+							const columns = document.querySelectorAll(".class");
+							filter.forEach((button) => {
+								button.addEventListener("click", () => {
+									const filter = button.getAttribute("data-filter");
+									columns.forEach((column) => {
+										if (filter === "all") {
+											column.classList.remove("hidden");
+										} else if (column.getAttribute("data-group") === filter) {
+											column.classList.remove("hidden");
+										} else {
+											column.classList.add("hidden");
+										}
+									});
+								});
+							});
+						</script>
 					</div>
 				</div>
 			</section>
-			<!-- <section class="page__offer offer">
-          <div class="offer__container">
-            <h2 class="subtitle">classes <br /><span>What We Offer</span></h2>
-          </div>
-          <div class="offer__cnt">
-            <div class="offer__list">
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/1.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">weight training</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Monday</span> <span>10.00am - 11.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Wednesday</span><span>9.00am - 10.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Friday</span><span>6.00pm - 7.00pm</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/2.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">cardio training</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Tuesday </span> <span>11.00am - 12.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Thursday </span><span>9.30am - 11.30am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Saturday </span><span>9.00am - 11.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Sunday </span><span>10.00am - 11.00am</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/3.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">aerobics</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Wednesday </span> <span>2.00pm - 3.00pm</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Thursday </span><span>3.00pm - 4.00pm</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Friday</span><span>11.00am - 2.00pm</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Sunday </span><span>9.00am - 10.00am</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/4.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">crossfit</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Monday </span> <span>10.00am - 11.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Wednesday</span><span>9.00am - 10.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Friday</span><span>6.00pm - 7.00pm</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/5.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">yoga</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Monday</span> <span>10.00am - 11.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Wednesday</span><span>9.00am - 10.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Friday</span><span>6.00pm - 7.00pm</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Saturday </span><span>11.00am - 12.00am</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="class">
-                <div class="class__img">
-                  <img
-                    class="class__image ibg"
-                    src="img/classes/6.webp"
-                    alt="Image" />
-                </div>
-                <div class="class__body">
-                  <div class="class__header">
-                    <h3 class="class__title">stretching</h3>
-                  </div>
-                  <div class="class__content">
-                    <div class="class__schedule">
-                      <span>Monday</span> <span>10.00am - 11.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Wednesday</span><span>9.00am - 10.00am</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Saturday </span><span>12.00am - 1.00pm</span>
-                    </div>
-                    <div class="class__schedule">
-                      <span>Sunday </span><span>10.00am - 12.00am</span>
-                    </div>
-                  </div>
-                  <div class="class__actions">
-                    <a
-                      data-watch
-                      data-watch-once
-                      data-watch-threshold="0.6"
-                      data-popup="#popup"
-                      class="class__button button button--tr"
-                      href="#">
-                      Join
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <script>
-                const scrollContainer = document.querySelector(".offer__list");
 
-                let isDown = false;
-                let startX;
-                let scrollLeft;
-
-                scrollContainer.addEventListener("mousedown", (e) => {
-                  isDown = true;
-                  scrollContainer.classList.add("active");
-                  startX = e.pageX - scrollContainer.offsetLeft;
-                  scrollLeft = scrollContainer.scrollLeft;
-                });
-
-                scrollContainer.addEventListener("mouseup", () => {
-                  isDown = false;
-                  scrollContainer.classList.remove("active");
-                });
-
-                scrollContainer.addEventListener("mouseleave", () => {
-                  isDown = false;
-                  scrollContainer.classList.remove("active");
-                });
-
-                scrollContainer.addEventListener("mousemove", (e) => {
-                  if (!isDown) return;
-                  e.preventDefault();
-                  const x = e.pageX - scrollContainer.offsetLeft;
-                  const walk = (x - startX) * 2;
-                  scrollContainer.scrollLeft = scrollLeft - walk;
-                });
-              </script>
-            </div>
-          </div>
-        </section> -->
 			<section class="page__price price">
 				<div class="price__container">
 					<h2 class="subtitle">
@@ -696,7 +692,7 @@
 						toggle.addEventListener("change", () => {
 							if (toggle.checked) {
 								// ON
-								results[0].innerHTML = `$179`;
+								results[0].innerHTML = `$199`;
 								results[1].innerHTML = `/year`;
 								results[2].innerHTML = `$299`;
 								results[3].innerHTML = `/year`;
@@ -718,13 +714,215 @@
 					</script>
 				</div>
 			</section>
+
+			<section class="page__team team">
+				<div class="team__container">
+					<h2 class="subtitle">
+						team <br /><span>Meet our Professionals Coaches</span>
+					</h2>
+				</div>
+				<div class="team__cnt">
+					<div class="team__list">
+						<div class="team__slider swiper">
+							<div class="team__wrapper swiper-wrapper">
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/1.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">weight training</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Monday</span> <span>10.00am - 11.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Wednesday</span><span>9.00am - 10.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Friday</span><span>6.00pm - 7.00pm</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/2.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">cardio training</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Tuesday </span> <span>11.00am - 12.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Thursday </span><span>9.30am - 11.30am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Saturday </span><span>9.00am - 11.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Sunday </span><span>10.00am - 11.00am</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/3.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">aerobics</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Wednesday </span> <span>2.00pm - 3.00pm</span>
+												</div>
+												<div class="class__schedule">
+													<span>Thursday </span><span>3.00pm - 4.00pm</span>
+												</div>
+												<div class="class__schedule">
+													<span>Friday</span><span>11.00am - 2.00pm</span>
+												</div>
+												<div class="class__schedule">
+													<span>Sunday </span><span>9.00am - 10.00am</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/4.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">crossfit</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Monday </span> <span>10.00am - 11.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Wednesday</span><span>9.00am - 10.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Friday</span><span>6.00pm - 7.00pm</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/5.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">yoga</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Monday</span> <span>10.00am - 11.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Wednesday</span><span>9.00am - 10.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Friday</span><span>6.00pm - 7.00pm</span>
+												</div>
+												<div class="class__schedule">
+													<span>Saturday </span><span>11.00am - 12.00am</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="team__slide swiper-slide">
+									<article class="class">
+										<div class="class__img">
+											<img class="class__image ibg" src="img/classes/6.webp" alt="Image" />
+										</div>
+										<div class="class__body">
+											<div class="class__header">
+												<h3 class="class__title">stretching</h3>
+											</div>
+											<div class="class__content">
+												<div class="class__schedule">
+													<span>Monday</span> <span>10.00am - 11.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Wednesday</span><span>9.00am - 10.00am</span>
+												</div>
+												<div class="class__schedule">
+													<span>Saturday </span><span>12.00am - 1.00pm</span>
+												</div>
+												<div class="class__schedule">
+													<span>Sunday </span><span>10.00am - 12.00am</span>
+												</div>
+											</div>
+											<div class="class__actions">
+												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
+													Join
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team__container">
+					<div class="team__actions">
+						<button type="button" class="team__slide-prev _icon-left"></button>
+						<button type="button" class="team__slide-next _icon-right"></button>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250109144503"></script>
+	<script src="js/app.min.js?_v=20250113153827"></script>
 </body>
 
 </html>
