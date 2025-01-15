@@ -20,7 +20,7 @@
 	<meta name="description" content="Dynamic Life - your fitness center">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Dynamic Life - your fitness</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250113153827">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250115151059">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -82,6 +82,31 @@
 				</div>
 			</div>
 			<div class="page__hero hero--mobile"></div>
+
+			<div class="hero-about">
+				<div class="hero-about__container">
+					<div class="hero-about__left">
+						<div class="hero-about__logo">
+							<img class="hero-about__image ibg" src="img/hero/dynamic.svg" alt="Image" />
+						</div>
+						<div class="hero-about__body">
+							<div class="hero-about__slogo">
+								<img class="hero-about__simage ibg" src="img/hero/life.svg" alt="Image" />
+							</div>
+							<div class="hero-about__items">
+								<div class="hero-about__item">Motivating Community</div>
+								<div class="hero-about__item">Expert Guidance</div>
+
+								<div class="hero-about__item">State-of-the-Art Equipment</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-about__right">
+						<img class="hero-about__mimage ibg" src="img/hero/join.webp" alt="Image" />
+					</div>
+				</div>
+			</div>
+
 			<section class="page__introduction introduction">
 				<div class="introduction__container">
 					<h2 class="subtitle subtitle--margintop">
@@ -151,7 +176,7 @@
 				<div class="offer__container">
 					<h2 class="subtitle">classes <br /><span>What We Offer</span></h2>
 					<div class="filter">
-						<button class="button button--blacknb" data-filter="all">
+						<button class="button button--blacknb active" data-filter="all">
 							all classes
 						</button>
 						<button class="button button--blacknb" data-filter="1">
@@ -578,11 +603,20 @@
 						</script>
 						<!--  -->
 						<script>
-							const filter = document.querySelectorAll(".filter button");
+							const filterButtons =
+								document.querySelectorAll(".filter button");
 							const columns = document.querySelectorAll(".class");
-							filter.forEach((button) => {
+
+							filterButtons.forEach((button) => {
 								button.addEventListener("click", () => {
 									const filter = button.getAttribute("data-filter");
+
+									filterButtons.forEach((btn) =>
+										btn.classList.remove("active")
+									);
+
+									button.classList.add("active");
+
 									columns.forEach((column) => {
 										if (filter === "all") {
 											column.classList.remove("hidden");
@@ -718,7 +752,7 @@
 			<section class="page__team team">
 				<div class="team__container">
 					<h2 class="subtitle">
-						team <br /><span>Meet our Professionals Coaches</span>
+						team <br /><span>Meet our Professionals Traineres</span>
 					</h2>
 				</div>
 				<div class="team__cnt">
@@ -726,184 +760,214 @@
 						<div class="team__slider swiper">
 							<div class="team__wrapper swiper-wrapper">
 								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/1.webp" alt="Image" />
+									<div class="trainer">
+										<div class="trainer__description">
+											<div class="trainer__description-overlay">
+												<div class="trainer__body">
+													<ul class="trainer__socials">
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-fb" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-inst" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-x" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-in" href="#"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="trainer__image">
+												<img class="trainer__img ibg" src="img/team/01.webp" alt="Image" />
+											</div>
+											<button class="trainer__toggle-description trainer__toggle-description--open">
+												<!-- open  -->
+												<svg class="trainer__toggle-description__icon-open" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<rect width="60" height="60" rx="30" fill="#222222" />
+													<path d="M15 20H45M15 30H45M15 40H45" stroke="#FDEF00" stroke-width="2" stroke-linecap="round" />
+												</svg>
+												<!-- close  -->
+												<svg class="trainer__toggle-description__icon-close" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<circle cx="30" cy="30" r="30" fill="#D8EBF2" />
+													<path d="M19 19.2134L40.2132 40.4266" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+													<path d="M19 40.2134L40.2132 19.0002" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+												</svg>
+											</button>
 										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">weight training</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+										<div class="trainer__title">Max Steele</div>
+										<div class="trainer__position">Trainer</div>
+									</div>
 								</div>
 								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/2.webp" alt="Image" />
+									<div class="trainer">
+										<div class="trainer__description">
+											<div class="trainer__description-overlay">
+												<div class="trainer__body">
+													<ul class="trainer__socials">
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-fb" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-inst" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-x" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-in" href="#"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="trainer__image">
+												<img class="trainer__img ibg" src="img/team/02.webp" alt="Image" />
+											</div>
+											<button class="trainer__toggle-description trainer__toggle-description--open">
+												<!-- open  -->
+												<svg class="trainer__toggle-description__icon-open" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<rect width="60" height="60" rx="30" fill="#222222" />
+													<path d="M15 20H45M15 30H45M15 40H45" stroke="#FDEF00" stroke-width="2" stroke-linecap="round" />
+												</svg>
+												<!-- close  -->
+												<svg class="trainer__toggle-description__icon-close" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<circle cx="30" cy="30" r="30" fill="#D8EBF2" />
+													<path d="M19 19.2134L40.2132 40.4266" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+													<path d="M19 40.2134L40.2132 19.0002" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+												</svg>
+											</button>
 										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">cardio training</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Tuesday </span> <span>11.00am - 12.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Thursday </span><span>9.30am - 11.30am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>9.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>10.00am - 11.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+										<div class="trainer__title">Monika Hale</div>
+										<div class="trainer__position">Trainer</div>
+									</div>
 								</div>
 								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/3.webp" alt="Image" />
+									<div class="trainer">
+										<div class="trainer__description">
+											<div class="trainer__description-overlay">
+												<div class="trainer__body">
+													<ul class="trainer__socials">
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-fb" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-inst" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-x" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-in" href="#"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="trainer__image">
+												<img class="trainer__img ibg" src="img/team/03.webp" alt="Image" />
+											</div>
+											<button class="trainer__toggle-description trainer__toggle-description--open">
+												<!-- open  -->
+												<svg class="trainer__toggle-description__icon-open" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<rect width="60" height="60" rx="30" fill="#222222" />
+													<path d="M15 20H45M15 30H45M15 40H45" stroke="#FDEF00" stroke-width="2" stroke-linecap="round" />
+												</svg>
+												<!-- close  -->
+												<svg class="trainer__toggle-description__icon-close" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<circle cx="30" cy="30" r="30" fill="#D8EBF2" />
+													<path d="M19 19.2134L40.2132 40.4266" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+													<path d="M19 40.2134L40.2132 19.0002" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+												</svg>
+											</button>
 										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">aerobics</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Wednesday </span> <span>2.00pm - 3.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Thursday </span><span>3.00pm - 4.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>11.00am - 2.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>9.00am - 10.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+										<div class="trainer__title">Taylor Valentino</div>
+										<div class="trainer__position">Fitness Pro</div>
+									</div>
 								</div>
 								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/4.webp" alt="Image" />
+									<div class="trainer">
+										<div class="trainer__description">
+											<div class="trainer__description-overlay">
+												<div class="trainer__body">
+													<ul class="trainer__socials">
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-fb" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-inst" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-x" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-in" href="#"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="trainer__image">
+												<img class="trainer__img ibg" src="img/team/04.webp" alt="Image" />
+											</div>
+											<button class="trainer__toggle-description trainer__toggle-description--open">
+												<!-- open  -->
+												<svg class="trainer__toggle-description__icon-open" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<rect width="60" height="60" rx="30" fill="#222222" />
+													<path d="M15 20H45M15 30H45M15 40H45" stroke="#FDEF00" stroke-width="2" stroke-linecap="round" />
+												</svg>
+												<!-- close  -->
+												<svg class="trainer__toggle-description__icon-close" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<circle cx="30" cy="30" r="30" fill="#D8EBF2" />
+													<path d="M19 19.2134L40.2132 40.4266" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+													<path d="M19 40.2134L40.2132 19.0002" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+												</svg>
+											</button>
 										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">crossfit</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday </span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+										<div class="trainer__title">Tom Elite</div>
+										<div class="trainer__position">Trainer</div>
+									</div>
 								</div>
 								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/5.webp" alt="Image" />
+									<div class="trainer">
+										<div class="trainer__description">
+											<div class="trainer__description-overlay">
+												<div class="trainer__body">
+													<ul class="trainer__socials">
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-fb" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-inst" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-x" href="#"></a>
+														</li>
+														<li>
+															<a aria-label="social link" class="trainer__social _icon-s-in" href="#"></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="trainer__image">
+												<img class="trainer__img ibg" src="img/team/05.webp" alt="Image" />
+											</div>
+											<button class="trainer__toggle-description trainer__toggle-description--open">
+												<!-- open  -->
+												<svg class="trainer__toggle-description__icon-open" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<rect width="60" height="60" rx="30" fill="#222222" />
+													<path d="M15 20H45M15 30H45M15 40H45" stroke="#FDEF00" stroke-width="2" stroke-linecap="round" />
+												</svg>
+												<!-- close  -->
+												<svg class="trainer__toggle-description__icon-close" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+													<circle cx="30" cy="30" r="30" fill="#D8EBF2" />
+													<path d="M19 19.2134L40.2132 40.4266" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+													<path d="M19 40.2134L40.2132 19.0002" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round" />
+												</svg>
+											</button>
 										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">yoga</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Friday</span><span>6.00pm - 7.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>11.00am - 12.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="team__slide swiper-slide">
-									<article class="class">
-										<div class="class__img">
-											<img class="class__image ibg" src="img/classes/6.webp" alt="Image" />
-										</div>
-										<div class="class__body">
-											<div class="class__header">
-												<h3 class="class__title">stretching</h3>
-											</div>
-											<div class="class__content">
-												<div class="class__schedule">
-													<span>Monday</span> <span>10.00am - 11.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Wednesday</span><span>9.00am - 10.00am</span>
-												</div>
-												<div class="class__schedule">
-													<span>Saturday </span><span>12.00am - 1.00pm</span>
-												</div>
-												<div class="class__schedule">
-													<span>Sunday </span><span>10.00am - 12.00am</span>
-												</div>
-											</div>
-											<div class="class__actions">
-												<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="class__button button button--tr" href="#">
-													Join
-												</a>
-											</div>
-										</div>
-									</article>
+										<div class="trainer__title">Ava Hart</div>
+										<div class="trainer__position">Trainer</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -915,6 +979,32 @@
 						<button type="button" class="team__slide-next _icon-right"></button>
 					</div>
 				</div>
+				<script>
+					const trainerCards = document.querySelectorAll(".trainer");
+					trainerCards.forEach((trainerCard) => {
+						const toggleButton = trainerCard.querySelector(
+							".trainer__toggle-description"
+						);
+						toggleButton.addEventListener("click", () => {
+							trainerCard.classList.toggle("trainer--show-description");
+							toggleButton.classList.toggle(
+								"trainer__toggle-description--open"
+							);
+						});
+					});
+				</script>
+				<!-- <script>
+            const trainerCard = document.querySelector(".trainer");
+            const toggleButton = trainerCard.querySelector(
+              ".trainer__toggle-description"
+            );
+            toggleButton.addEventListener("click", () => {
+              trainerCard.classList.toggle("trainer--show-description");
+              toggleButton.classList.toggle(
+                "trainer__toggle-description--open"
+              );
+            });
+          </script> -->
 			</section>
 		</main>
 		<footer class="footer">
@@ -922,7 +1012,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250113153827"></script>
+	<script src="js/app.min.js?_v=20250115151059"></script>
 </body>
 
 </html>

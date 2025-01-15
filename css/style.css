@@ -516,7 +516,6 @@ input:checked+.toggle-button::before {
   line-height: 1.5
 }
 .icon-menu {
-  margin-right: .3125rem;
   display: none
 }
 .page__hero {
@@ -535,8 +534,6 @@ input:checked+.toggle-button::before {
 }
 .hero--mobile {
   border-radius: 1.25rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
   position: relative
 }
 .hero__image {
@@ -695,7 +692,7 @@ input:checked+.toggle-button::before {
   text-align: center
 }
 .team {
-  background-color: #222
+  background-color: #0d0d0d
 }
 .team__cnt {
   position: relative
@@ -711,7 +708,7 @@ input:checked+.toggle-button::before {
   display: flex;
   justify-content: flex-end;
   gap: 1.25rem;
-  margin-top: 2.5rem;
+  margin-top: .625rem;
   font-size: 3.1875rem
 }
 .class.hidden {
@@ -752,7 +749,7 @@ input:checked+.toggle-button::before {
   padding-left: 2.25rem;
   content: "";
   display: inline-block;
-  background: url(../img/icons/arrow.svg) 0 0 no-repeat;
+  background: url(../img/icons/arrowbg.svg) 0 0 no-repeat;
   background-size: cover;
   width: 2.25rem;
   height: 1.6875rem;
@@ -780,6 +777,14 @@ input:checked+.toggle-button::before {
   text-align: center;
   padding-left: .9375rem;
   padding-right: .9375rem
+}
+.filter button.active {
+  background-color: #fff;
+  color: #0d0d0d;
+  border: 2px solid #fff
+}
+.hidden {
+  display: none
 }
 .offer {
   background: #222
@@ -818,6 +823,160 @@ input:checked+.toggle-button::before {
 }
 .filter::-webkit-scrollbar {
   display: none
+}
+.hero-about {
+  position: relative;
+  margin-top: -3.75rem
+}
+.hero-about__container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.25rem
+}
+.hero-about__left {
+  padding-top: 5rem;
+  padding-bottom: 2.25rem;
+  padding-right: 1.25rem
+}
+.hero-about__logo {
+  max-width: 35.3125rem
+}
+.hero-about__image {
+  aspect-ratio: 565/133
+}
+.hero-about__body {
+  padding-top: .625rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center
+}
+.hero-about__slogo {
+  min-width: 6.25rem;
+  max-width: 12.1875rem
+}
+.hero-about__simage {
+  aspect-ratio: 195/96
+}
+.hero-about__items {
+  display: grid
+}
+.hero-about__item {
+  color: #d8ebf2;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: .5rem
+}
+.hero-about__item::before {
+  padding-left: 2.25rem;
+  content: "";
+  display: inline-block;
+  background: url(../img/icons/arrow.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 2.25rem;
+  height: 1.6875rem;
+  flex: 0 0 2.25rem
+}
+.hero-about__mimage {
+  border-radius: 1.875rem
+}
+.trainer {
+  position: relative;
+  border: .0625rem solid transparent;
+  overflow: hidden;
+  border-radius: 1.875rem
+}
+.trainer__image {
+  overflow: hidden
+}
+.trainer__img {
+  border-radius: 1.875rem;
+  overflow: hidden;
+  aspect-ratio: 452/570
+}
+.trainer__title {
+  margin-top: 1.5rem;
+  color: #fdef00;
+  font-family: "Montserrat Alternates";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: .625rem
+}
+.trainer__description {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+.trainer__description-overlay {
+  border-radius: 1.875rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: .0625rem solid #fdef00;
+  background-color: rgba(0,0,0,.6);
+  display: flex;
+  align-items: end;
+  transition: opacity .3s ease,visibility .3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2
+}
+.trainer__toggle-description {
+  position: absolute;
+  bottom: -1.875rem;
+  right: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: all .3s;
+  -webkit-transform: scale(1.0000001);
+  transform: scale(1.0000001)
+}
+.trainer__toggle-description svg {
+  width: 3.75rem;
+  height: 3.75rem;
+  display: none
+}
+.trainer__body {
+  padding: 2rem
+}
+.trainer__social {
+  font-size: 2.25rem;
+  transition: all .3s
+}
+.trainer__position {
+  color: #fff;
+  padding-bottom: 1.25rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5
+}
+.trainer--show-description .trainer__description-overlay {
+  opacity: 1;
+  visibility: visible
+}
+.trainer__toggle-description--open .trainer__toggle-description__icon-open {
+  display: block
+}
+.trainer--show-description .trainer__toggle-description__icon-open {
+  display: none
+}
+.trainer--show-description .trainer__toggle-description__icon-close {
+  display: block
 }
 .swiper {
   overflow: hidden
@@ -961,6 +1120,18 @@ input:checked+.toggle-button::before {
   .price__items li::before {
     padding-left: 1rem
   }
+  .hero-about__container {
+    padding-bottom: 9.375rem
+  }
+  .hero-about__body {
+    gap: 2.5rem
+  }
+  .hero-about__items {
+    gap: 1.25rem
+  }
+  .hero-about__item {
+    font-size: 1.25rem
+  }
 }
 @media (min-width:90em) {
   .introduction__item:nth-child(1) {
@@ -980,7 +1151,7 @@ input:checked+.toggle-button::before {
 }
 @media (max-width:89.125em) {
   .team__cnt {
-    padding-left: .9375rem
+    padding-left: .0000000625rem
   }
   .offer__list {
     padding-left: .9375rem;
@@ -1003,6 +1174,8 @@ input:checked+.toggle-button::before {
   }
   .hero--mobile {
     background-color: #222;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
     margin-top: -12.5rem
   }
   .hero__container {
@@ -1045,6 +1218,12 @@ input:checked+.toggle-button::before {
     -moz-column-gap: .625rem;
     column-gap: .625rem;
     margin-bottom: 3.125rem
+  }
+  .hero-about {
+    margin-top: 3.75rem
+  }
+  .hero-about__left {
+    padding-top: 0
   }
 }
 @media (max-width:47.99875em) {
@@ -1232,15 +1411,36 @@ input:checked+.toggle-button::before {
   .price__items {
     grid-template-columns: auto
   }
-  .team__slider .swiper-slide {
-    padding-right: .9375rem
-  }
   .class__body {
     margin-top: -1.875rem
   }
   .offer__list {
     flex-direction: column;
     gap: 1.875rem
+  }
+  .hero-about__container {
+    grid-template-columns: auto;
+    gap: 3.75rem
+  }
+  .hero-about__left {
+    padding-bottom: 0;
+    padding-right: 0
+  }
+  .hero-about__body {
+    grid-template-columns: .9fr auto
+  }
+  .hero-about__item::before {
+    padding-left: 1.25rem;
+    width: 1.25rem;
+    height: 1rem;
+    flex: 0 0 1.25rem
+  }
+  .hero-about__right {
+    margin-right: -.9375rem;
+    margin-left: -.9375rem
+  }
+  .hero-about__mimage {
+    border-radius: 0
   }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
@@ -1342,6 +1542,18 @@ input:checked+.toggle-button::before {
   .price__items li::before {
     padding-left: .75rem
   }
+  .hero-about__container {
+    padding-bottom: 2.5rem
+  }
+  .hero-about__body {
+    gap: .625rem
+  }
+  .hero-about__items {
+    gap: .75rem
+  }
+  .hero-about__item {
+    font-size: .875rem
+  }
 }
 @media (min-width:22.5em)and (max-width:89.125em) {
   .button {
@@ -1434,6 +1646,18 @@ input:checked+.toggle-button::before {
   .price__items li::before {
     padding-left: clamp(.75rem ,.6655722326rem + .3752345216vw ,1rem)
   }
+  .hero-about__container {
+    padding-bottom: clamp(2.5rem ,.1782363977rem + 10.3189493433vw ,9.375rem)
+  }
+  .hero-about__body {
+    gap: clamp(.625rem ,-.0082082552rem + 2.8142589118vw ,2.5rem)
+  }
+  .hero-about__items {
+    gap: clamp(.75rem ,.5811444653rem + .7504690432vw ,1.25rem)
+  }
+  .hero-about__item {
+    font-size: clamp(.875rem ,.748358349rem + .5628517824vw ,1.25rem)
+  }
 }
 @media (max-width:61.99875em)and (min-width:89.125em) {
   .subtitle--margintop {
@@ -1454,7 +1678,7 @@ input:checked+.toggle-button::before {
 }
 @media (min-width:89.125em)and (max-width:120em) {
   .team__cnt {
-    padding-left: clamp(.9375rem ,-18.0060728745rem + 21.2550607287vw ,7.5rem)
+    padding-left: clamp(.0000000625rem ,-21.6497973279rem + 24.2914977733vw ,7.5rem)
   }
   .offer__list {
     padding-left: clamp(.9375rem ,-18.0060728745rem + 21.2550607287vw ,7.5rem)
@@ -1482,6 +1706,13 @@ input:checked+.toggle-button::before {
     background-color: #fff
   }
   [class*=_link]:hover {
+    color: #fdef00
+  }
+  .trainer__toggle-description:hover {
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075)
+  }
+  .trainer__social:hover {
     color: #fdef00
   }
 }

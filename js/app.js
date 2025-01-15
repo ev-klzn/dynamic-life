@@ -3765,8 +3765,7 @@
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 4.5,
-            spaceBetween: 20,
+            slidesPerView: 3.2,
             speed: 1e3,
             preloadImages: true,
             lazy: true,
@@ -3776,19 +3775,19 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1.05,
+                    slidesPerView: 1.1,
                     spaceBetween: 12
                 },
                 768: {
-                    slidesPerView: 2.15,
+                    slidesPerView: 2.2,
                     spaceBetween: 20
                 },
                 1300: {
-                    slidesPerView: 3.5,
+                    slidesPerView: 3.2,
                     spaceBetween: 20
                 },
                 1440: {
-                    slidesPerView: 4.5,
+                    slidesPerView: 3.3,
                     spaceBetween: 20
                 }
             }
