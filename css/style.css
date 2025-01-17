@@ -175,7 +175,9 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
-  padding-bottom: .875rem
+  padding-bottom: .875rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem
 }
 .button--black {
   color: #fdef00;
@@ -188,13 +190,11 @@ body {
   border: .125rem solid #0d0d0d
 }
 .button--tr {
-  padding: .5rem 2.5rem;
   background-color: rgba(0,0,0,0);
   color: #fdef00
 }
 .button--blacknb {
   text-transform: uppercase;
-  padding: .5rem 2.5rem;
   border: .125rem solid #0d0d0d;
   color: #fff;
   font-size: 1rem;
@@ -1391,12 +1391,6 @@ input:checked+.toggle-button::before {
   }
 }
 @media (min-width:89.125em) {
-  .button {
-    padding-left: 3.75rem
-  }
-  .button {
-    padding-right: 3.75rem
-  }
   .spollers {
     gap: 1rem
   }
@@ -2022,12 +2016,6 @@ input:checked+.toggle-button::before {
   }
 }
 @media (max-width:22.5em) {
-  .button {
-    padding-left: .9375rem
-  }
-  .button {
-    padding-right: .9375rem
-  }
   .spollers {
     gap: 1.5rem
   }
@@ -2197,13 +2185,17 @@ input:checked+.toggle-button::before {
     gap: 3rem
   }
 }
+@media (min-width:47.99875em)and (min-width:22.5em)and (max-width:89.125em) {
+  .input {
+    width: clamp(15.625rem ,11.6146810507rem + 17.8236397749vw ,27.5rem)
+  }
+}
+@media (min-width:47.99875em)and (max-width:22.5em) {
+  .input {
+    width: 15.625rem
+  }
+}
 @media (min-width:22.5em)and (max-width:89.125em) {
-  .button {
-    padding-left: clamp(.9375rem ,-.0123123827rem + 4.2213883677vw ,3.75rem)
-  }
-  .button {
-    padding-right: clamp(.9375rem ,-.0123123827rem + 4.2213883677vw ,3.75rem)
-  }
   .spollers {
     gap: clamp(1rem ,1.6688555347rem + -.7504690432vw ,1.5rem)
   }
@@ -2371,16 +2363,6 @@ input:checked+.toggle-button::before {
   }
   .qa__body {
     gap: clamp(3rem ,2.6622889306rem + 1.5009380863vw ,4rem)
-  }
-}
-@media (min-width:47.99875em)and (min-width:22.5em)and (max-width:89.125em) {
-  .input {
-    width: clamp(15.625rem ,11.6146810507rem + 17.8236397749vw ,27.5rem)
-  }
-}
-@media (min-width:47.99875em)and (max-width:22.5em) {
-  .input {
-    width: 15.625rem
   }
 }
 @media (max-width:61.99875em)and (min-width:89.125em) {
