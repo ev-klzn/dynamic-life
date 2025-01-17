@@ -212,7 +212,6 @@ textarea {
 }
 .input {
   border-radius: 1.875rem!important;
-  width: 100%;
   display: block;
   caret-color: inherit;
   background-color: #fff;
@@ -1362,6 +1361,11 @@ input:checked+.toggle-button::before {
 .swiper-button-lock {
   display: none!important
 }
+@media (min-width:47.99875em)and (min-width:89.125em) {
+  .input {
+    width: 27.5rem
+  }
+}
 @media (min-width:47.99875em) {
   .contact {
     background-image: url(../img/contact/1.webp)
@@ -1393,9 +1397,6 @@ input:checked+.toggle-button::before {
   }
   .button {
     padding-right: 3.75rem
-  }
-  .input {
-    width: 27.5rem
   }
   .spollers {
     gap: 1rem
@@ -2029,9 +2030,6 @@ input:checked+.toggle-button::before {
   .button {
     padding-right: .9375rem
   }
-  .input {
-    width: 15.625rem
-  }
   .spollers {
     gap: 1.5rem
   }
@@ -2208,9 +2206,6 @@ input:checked+.toggle-button::before {
   .button {
     padding-right: clamp(.9375rem ,-.0123123827rem + 4.2213883677vw ,3.75rem)
   }
-  .input {
-    width: clamp(15.625rem ,11.6146810507rem + 17.8236397749vw ,27.5rem)
-  }
   .spollers {
     gap: clamp(1rem ,1.6688555347rem + -.7504690432vw ,1.5rem)
   }
@@ -2378,6 +2373,16 @@ input:checked+.toggle-button::before {
   }
   .qa__body {
     gap: clamp(3rem ,2.6622889306rem + 1.5009380863vw ,4rem)
+  }
+}
+@media (min-width:47.99875em)and (min-width:22.5em)and (max-width:89.125em) {
+  .input {
+    width: clamp(15.625rem ,11.6146810507rem + 17.8236397749vw ,27.5rem)
+  }
+}
+@media (min-width:47.99875em)and (max-width:22.5em) {
+  .input {
+    width: 15.625rem
   }
 }
 @media (max-width:61.99875em)and (min-width:89.125em) {
