@@ -900,10 +900,10 @@ input:checked+.toggle-button::before {
   position: relative
 }
 .team__slide-next {
-  transition: all 1s
+  transition: all .3s
 }
 .team__slide-prev {
-  transition: all 1s
+  transition: all .3s
 }
 .team__actions {
   color: #fdef00;
@@ -1190,16 +1190,17 @@ input:checked+.toggle-button::before {
   margin-top: 2.5rem
 }
 .testimonials__prev {
-  transition: all 1s
+  transition: all .3s
 }
 .testimonials__next {
-  transition: all 1s
+  transition: all .3s
 }
 .testimonials__actions {
   color: #fdef00;
   display: flex;
   justify-content: flex-end;
   gap: 1.25rem;
+  padding-right: .1875rem;
   font-size: 3.1875rem
 }
 .testimonials .swiper-pagination {
@@ -2419,11 +2420,27 @@ input:checked+.toggle-button::before {
   [class*=_link]:hover {
     color: #fdef00
   }
+  .team__slide-next:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  .team__slide-prev:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
   .trainer__toggle-description:hover {
-    -webkit-transform: scale(1.075);
-    transform: scale(1.075)
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
   }
   .trainer__social:hover {
     color: #fdef00
+  }
+  .testimonials__prev:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  .testimonials__next:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
   }
 }
