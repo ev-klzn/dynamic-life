@@ -193,6 +193,11 @@ body {
   background-color: rgba(0,0,0,0);
   color: #fdef00
 }
+.button--trp {
+  padding: .5rem 2.5rem;
+  background-color: rgba(0,0,0,0);
+  color: #fdef00
+}
 .button--blacknb {
   text-transform: uppercase;
   border: .125rem solid #0d0d0d;
@@ -2412,6 +2417,11 @@ input:checked+.toggle-button::before {
     border: .125rem solid #fdef00
   }
   .button--tr:hover {
+    color: #0d0d0d;
+    background-color: #fdef00;
+    border: .125rem solid #fdef00
+  }
+  .button--trp:hover {
     color: #0d0d0d;
     background-color: #fdef00;
     border: .125rem solid #fdef00
