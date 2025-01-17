@@ -1864,7 +1864,7 @@ input:checked+.toggle-button::before {
     position: fixed;
     background: #0d0d0d;
     width: 100%;
-    height: 4.6875rem;
+    height: 3.875rem;
     top: 0;
     z-index: 999;
     border-bottom: 1px solid rgba(253,239,0,.2)
