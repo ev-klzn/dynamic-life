@@ -4115,12 +4115,16 @@
                     slidesPerView: 2.2,
                     spaceBetween: 20
                 },
-                1300: {
+                1024: {
                     slidesPerView: 3.2,
                     spaceBetween: 20
                 },
-                1440: {
-                    slidesPerView: 3.3,
+                1300: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20
+                },
+                1921: {
+                    slidesPerView: 4.1,
                     spaceBetween: 20
                 }
             }
