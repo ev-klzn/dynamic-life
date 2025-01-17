@@ -1309,7 +1309,6 @@ input:checked+.toggle-button::before {
   grid-template-columns: auto max-content
 }
 .contact__form {
-  border-radius: 1.875rem;
   padding: 2.5rem;
   background: #d8ebf2;
   display: flex;
@@ -1373,6 +1372,9 @@ input:checked+.toggle-button::before {
   .contact__cnt {
     padding-top: 4.6875rem;
     padding-bottom: 4.6875rem
+  }
+  .contact__form {
+    border-radius: 1.875rem
   }
 }
 @media (min-width:61.99875em) {
@@ -2002,7 +2004,9 @@ input:checked+.toggle-button::before {
     order: 1
   }
   .contact__container {
-    grid-template-columns: auto
+    grid-template-columns: auto;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
   }
   .qa__body {
     grid-template-columns: auto
