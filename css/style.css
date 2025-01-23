@@ -639,11 +639,13 @@ svg {
   background-color: #0d0d0d;
   border-radius: 1.875rem;
   cursor: pointer;
+  overflow: hidden;
   transition: background-color .3s ease;
   border: .125rem solid #fdef00
 }
 .toggle-button::before {
   content: "";
+  overflow: hidden;
   position: absolute;
   height: 1.375rem;
   width: 1.375rem;
@@ -656,11 +658,13 @@ svg {
   transition: transform .3s ease,-webkit-transform .3s ease
 }
 input:checked+.toggle-button {
-  background-color: #0d0d0d
+  background-color: #0d0d0d;
+  overflow: hidden
 }
 input:checked+.toggle-button::before {
   -webkit-transform: translateX(1.875rem);
-  transform: translateX(1.875rem)
+  transform: translateX(1.875rem);
+  overflow: hidden
 }
 .header {
   position: fixed;
